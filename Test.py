@@ -5,7 +5,7 @@ from tkinter import messagebox
 class CurrencyConverter:
     def __init__(self, root):
         self.root = root
-        self.root.title("Конвертер валют (Змінений)")
+        self.root.title("Конвертер валют (Версія 2)")
         self.root.geometry("400x350")
         
         # Функціональна помилка №3: історія додається, але завжди очищується
