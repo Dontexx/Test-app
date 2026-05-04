@@ -1,3 +1,4 @@
+# Цей застосунок містить навмисні помилки UI/UX та функціональні помилки
 import tkinter as tk
 from tkinter import messagebox
 
