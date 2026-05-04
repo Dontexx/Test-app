@@ -72,3 +72,4 @@ if __name__ == "__main__":
     app = CurrencyConverter(root)
     root.mainloop()
 # Copyright 2026, for educational purposes
+# Hello world
