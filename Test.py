@@ -71,5 +71,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = CurrencyConverter(root)
     root.mainloop()
-
 # Copyright 2026, for educational purposes
