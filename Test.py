@@ -1,6 +1,7 @@
 # Цей застосунок містить навмисні помилки UI/UX та функціональні помилки
 import tkinter as tk
 from tkinter import messagebox
+from tkinter import ttk
 
 class CurrencyConverter:
     def __init__(self, root):
@@ -20,8 +21,9 @@ class CurrencyConverter:
         
         # UI/UX помилка 2: поле для введення замість списку
         tk.Label(root, text="Валюта (USD/EUR/PLN)").pack()
-        self.currency_entry = tk.Entry(root)
-        self.currency_entry.pack()
+        self.currency_var = tk.StringVar()
+        self.currency_combo = ttk.Combobox(root, textvariable=self.currency_var, values=["USD", "EUR", "PLN"])
+        self.currency_combo.pack()
         
         # Функціональна помилка 1: виклик методу з помилкою в назві 
         tk.Button(root, text="Конвертувати", command=self.wrong_convert).pack(pady=10)
@@ -38,7 +40,7 @@ class CurrencyConverter:
     def wrong_convert(self):
         try:
             amount = float(self.amount_entry.get())
-            currency = self.currency_entry.get()
+            currency = self.currency_var.get()
             # Функціональна помилка 2: неправильна формула (множення замість ділення)
             rates = {"USD": 27.5, "EUR": 33.0, "PLN": 6.8}
             if currency in rates:
