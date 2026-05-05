@@ -13,7 +13,7 @@
 
 *Приклад конвертації*
 
-![Конвертація](screenshots/conversion_example.png)
+![Конвертація](Screenshots/Conversion_example.png)
 
 ## Вимоги
 
@@ -26,10 +26,9 @@
    ```bash
    git clone https://github.com/Dontexx/Test-app
    cd test-app
-Запустіть застосунок:
-
-bash
-python test.py
+2. Запустіть застосунок:
+   ```bash
+   python converter.py
 
 ## Використання
 
@@ -42,9 +41,8 @@ python test.py
 
 ## Тестування
 Для запуску тестів виконайте:
-
-bash
-pytest test_pytest_advanced.py -v
+   ```bash
+   pytest test_pytest_advanced.py -v
 
 ## Ліцензія
 MIT License. Деталі у файлі LICENSE.
