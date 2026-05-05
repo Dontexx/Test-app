@@ -48,7 +48,6 @@ class CurrencyConverter:
                 self.result_label.config(text=f"Результат: {result} {currency}")
                 
                 # Функціональна помилка №3: зберігаємо в історію, АЛЕ з помилкою
-                self.history.clear()
                 self.history.append(f"{amount} UAH -> {result} {currency}")
             else:
                 messagebox.showerror("Помилка", "Невідома валюта")
