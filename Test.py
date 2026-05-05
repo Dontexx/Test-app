@@ -44,7 +44,7 @@ class CurrencyConverter:
             # Функціональна помилка 2: неправильна формула (множення замість ділення)
             rates = {"USD": 27.5, "EUR": 33.0, "PLN": 6.8}
             if currency in rates:
-                result = amount * rates[currency]
+                result = amount / rates[currency]
                 self.result_label.config(text=f"Результат: {result} {currency}")
                 
                 # Функціональна помилка №3: зберігаємо в історію, АЛЕ з помилкою
