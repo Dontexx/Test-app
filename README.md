@@ -41,7 +41,7 @@
 
 ## Тестування
 Для запуску тестів виконайте:
-   ```bash
+    ```bash
    pytest test_pytest_advanced.py -v
 
 ## Ліцензія
