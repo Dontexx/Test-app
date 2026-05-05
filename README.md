@@ -47,6 +47,10 @@
 pytest test_pytest_advanced.py -v
 ```
 
+## Як долучитися до розробки
+
+Прочитайте [CONTRIBUTING.md](CONTRIBUTING.md) – там описані правила створення гілок, комітів та pull requests.
+
 ## Ліцензія
 MIT License. Деталі у файлі LICENSE.
 
